@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+}
+
+.whole {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.left-side {
+    position: relative;
+    display: flex;
+}
+
+.logo-cont {
+    background-color: rgba(27, 26, 26, 0.5);
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 20%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 6rem;
+    align-items: center;
+    padding: 20px;
+}
+
+.odin-logo {
+    height: 150px;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+}
+
+.top, .bottom {
+    background-color: rgb(218, 215, 215);
+    height: 40%;
+}
+
+.middle {
+    height: 20%;
+}
+#myForm {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 10px;
+}

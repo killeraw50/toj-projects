@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="whole">
+        <div class="left-side">
+            <img src="https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" class="back-photo">
+            <div class="logo-cont"><img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png" class="odin-logo"><div>ODIN</div></div>
+        </div>
+        <div class="right-side">
+            <div class="top">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.
+                <p>You know you want to.</p>
+            </div>
+            <div class="middle">
+                <div>Let's do this!</div>
+                <div class="inputs">
+                    <form id="myForm">
+                        <input type="text" id="first_name" name="first_name" placeholder="First Name" required>
+                        <input type="text" id="last_name" name="last_name" placeholder="Last Name" required>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                        <input type="number" id="phone_number" name="phone_number" placeholder="Phone Number" required>
+                        <input type="password" id="password" name="password" placeholder="Password" required>
+                        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required>
+                    </form>
+                </div>
+            </div>
+            <div class="bottom"><button type="submit" form="myForm" onlick="validate()">Create Account</button></div>
+        </div>
+    </div>
+</body>
+</html>

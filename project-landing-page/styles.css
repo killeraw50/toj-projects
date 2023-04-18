@@ -1,0 +1,144 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.header {
+    background-color: #142850;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+    position: fixed;
+    right: 0;
+    left: 0;
+}
+
+.logo {
+    height: 35px;
+    width: auto;
+    display: flex;
+}
+
+.links {
+    display: flex;
+    gap: 25px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+
+.first {
+    background-color: #27496D;
+    display: flex;
+    justify-content: space-between;
+    padding: 155px 200px;
+}
+
+.awesome {
+    flex-basis: 50%;
+}
+
+.headawesometext {
+    font-size: 48px;
+    font-weight: 800;
+    padding-bottom: 40px;
+}
+
+.awesometext {
+    font-size: 18px;
+    padding-bottom: 25px;
+}
+
+.largeimage {
+    width: 40%;
+    height: auto;
+}
+
+button {
+    background-color: #3882F6;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    padding: 5px 25px;
+}
+
+button:hover {
+    background-color: #23529c;
+}
+
+.second {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 200px;
+    background-color: #0C7B93;
+}
+
+.rinfo {
+    font-size: 36px;
+    font-weight: 800;
+    padding-bottom: 50px;
+}
+
+.collection {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.partcollection {
+    width: 150px;
+}
+
+.smallimage {
+    height: 150px;
+    width: auto;
+}
+
+.third {
+    background-color: #00A8CC;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.whole {
+    width: 450px;
+}
+
+.person {
+    font-weight: bold;
+    text-align: right;
+    padding: 10px;
+}
+
+.fourth {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.box {
+    color: #E5E7EB;
+    background-color: #3882F6;
+    border-radius: 8px;
+    display: flex;
+    padding: 50px 200px;
+    gap: 50px;
+}
+
+.butfour {
+    border: 1px white solid;
+}
+
+.footer {
+    background-color: gray;
+}
