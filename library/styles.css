@@ -1,0 +1,21 @@
+#popup-form {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #777171;
+  z-index: 1;
+}
+
+#popup-form.show {  
+  display: block;
+}
+
+.readTrue {
+  background-color: aqua;
+}
+
+.readFalse {
+  background-color: red;
+}

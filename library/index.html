@@ -6,24 +6,20 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Book Library</h1>
-    <form id="add-book-form">
-      <label for="title">Title:</label>
-      <input type="text" id="title" name="title"><br>
-      <label for="author">Author:</label>
-      <input type="text" id="author" name="author"><br>
-      <button type="submit">Add Book</button>
-    </form>
-    <table id="book-table">
-        <thead>
-          <tr>
-            <th>Title</th>
-            <th>Author</th>
-          </tr>
-        </thead>
-        <tbody>
-        </tbody>
-      </table>
+  <h1>Book Library</h1>
+  <button id="add-book">Add Book</button>
+  <form id="popup-form">
+    <input type="text" id="title" name="title" placeholder="Title">
+    <br>
+    <input type="text" id="author" name="author" placeholder=" Author">
+    <br>
+    <label for="read">Read</label>
+    <input type="checkbox" id="read" name="read">
+    <br>
+    <input type="submit" value="Add to Library">
+    <button type="button" id="cancel-button">Cancel</button>
+  </form>
+  <div id="library"></div>
     <script src="javascript.js"></script>
 </body>
 </html>
