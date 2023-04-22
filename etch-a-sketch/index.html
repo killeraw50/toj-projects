@@ -7,13 +7,10 @@
 </head>
 <body>
     <div class="container">
-        <div class="buttons">
-          <button onclick="generateGrid(16)">16x16</button>
-          <button onclick="generateGrid(32)">32x32</button>
-          <button onclick="generateGrid(64)">64x64</button>
-        </div>
+        <label for="size">Enter Grid Size</label>
+        <input type="number" name="size" id="size" placeholder="Min 4 Max 100" required>
         <div class="grid"></div>
       </div>
-    <script src="draw.js" charset="utf-8"></script>
+    <script src="draw.js"></script>
 </body>
 </html>
