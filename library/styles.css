@@ -10,12 +10,16 @@
 
 #popup-form.show {  
   display: block;
+  padding: 15px;
+  border-radius: 8px;
 }
 
-.readTrue {
-  background-color: aqua;
+.read {
+  background-color: greenyellow;
+  margin-left: 20px;
 }
 
-.readFalse {
-  background-color: red;
+.notRead {
+  background-color: palevioletred;
+  margin-left: 20px;
 }
