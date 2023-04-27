@@ -1,11 +1,8 @@
-let x = 1;
-let currentPlayer;
 let rounds = 1;
 let gameFinished = false;
 const cells = document.querySelectorAll(".cells");
 const resetButton = document.querySelector(".reset");
 const player = document.querySelector(".player");
-const display = document.querySelector(".announce");
 
 function playerClick() {
     if(gameFinished) {
@@ -13,26 +10,20 @@ function playerClick() {
     }
     cells.forEach(cell => {
         cell.addEventListener("click", () => {
+            let currentPlayer;
             if(gameFinished || cell.textContent !== "") {
-            return;
+                return;
             }
-            if(rounds % 2 !== 0) {
-                cell.textContent = "X";
-                currentPlayer = "Player 1";
-                player.textContent = "Player 2";
-            }
-            else {
-                cell.textContent = "O";
-                currentPlayer = "Player 2";
-                player.textContent = "Player 1";
-            }
+            cell.textContent = (rounds % 2 !== 0) ? "X" : "O";
+            currentPlayer = (rounds % 2 !== 0) ? "Player 1" : "Player 2";
+            player.textContent = (rounds % 2 !== 0) ? "Player 2 turn" : "Player 1 turn";
             rounds++;
             const win = playerWin();
             if(win) {
-                display.textContent = currentPlayer + " Wins!";
+                player.textContent = currentPlayer + " Wins!";
             }
             else if(rounds > 9) {
-                display.textContent = "Draw!";
+                player.textContent = "Draw!";
             }
         })
     })
@@ -78,5 +69,5 @@ function resetGame() {
       });
       rounds = 1;
       gameFinished = false;
-      player.textContent = "Player 1";
+      player.textContent = "Player 1 turn";
 }
