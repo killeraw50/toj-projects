@@ -1,1 +1,0 @@
-const pageLoad = require('./pageLoad');
